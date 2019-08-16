@@ -1,0 +1,32 @@
+<view class="banner_container">
+  <image src="cloud://marry-82nvc.6d61-marry-82nvc-1259697128/2.webp" mode="aspectFill" class="cover"></image>
+  <view class="container">
+    <view class="heading text-center">
+      <text class="name">史兆强 & 吕  萌</text>
+      <text class="title">We Are Getting Married</text>
+      <text class="time">2019年10月01日</text>
+    </view>
+    <view class="countdown styled">
+      <view>
+        {{days}}
+        <text>days</text>
+      </view>
+      <view>
+        {{hours}}
+        <text>hrs</text>
+      </view>
+      <view>
+        {{minutes}}
+        <text>min</text>
+      </view>
+      <view>
+        {{seconds}}
+        <text>sec</text>
+      </view>
+    </view>
+  </view>
+  <view class="btn">
+   <button type='primary' class='confirm-btn' wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">点击进入</button>
+  </view>
+ 
+</view>

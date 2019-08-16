@@ -1,0 +1,156 @@
+@import "/colorui/main.wxss";
+
+.background_music {
+  position: fixed;
+  top: 20rpx;
+  right: 10rpx;
+  z-index: 10001;
+  width: 100rpx;
+}
+
+.musicImg {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.music_icon {
+  animation: musicRotate 3s linear infinite;
+}
+
+.music_play {
+  width: 28rpx;
+  height: 60rpx;
+  margin-left: -5px;
+  transform-origin: top;
+  -webkit-transform: rotate(20deg);
+}
+
+.playImg {
+  animation: musicStop 1s linear forwards;
+}
+
+.pauseImg {
+  animation: musicStart 1s linear forwards;
+}
+
+@keyframes musicRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes musicStop {
+  from {
+    -webkit-transform: rotate(20deg);
+  }
+
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@keyframes musicStart {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(20deg);
+  }
+}
+
+.music_stop {
+  width: 4em;
+  display: none;
+}
+
+/* 列表图片样式 */
+
+.list.bannerStyle {
+  height: 482rpx;
+  width: 100%;
+  margin-top: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.list.bannerStyle .list-title {
+  width: 100%;
+  height: 64rpx;
+  color: #000;
+  /* background: #fff; */
+}
+
+.list.bannerStyle .list-title view {
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  font-weight: 600;
+  margin-left: 30rpx;
+}
+
+.list.bannerStyle .list-title view text.name {
+  margin-right: 14rpx;
+}
+
+.list.bannerStyle .list-title view text.date {
+  background: #000;
+  color: #fff;
+  min-width: 35rpx;
+  height: 40rpx;
+  padding: 0 5rpx;
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24rpx;
+}
+
+.list.bannerStyle .imgList {
+  width: 100%;
+  height: 420rpx;
+  margin: 0;
+  overflow: hidden;
+}
+
+.list.bannerStyle .imgList view {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+
+.list.bannerStyle .jump {
+  position: absolute;
+  right: 30rpx;
+  bottom: 40rpx;
+  width: 140rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  color: #fff;
+  border-radius: 10rpx;
+  background: #e2211c;
+  font-size: 28rpx;
+}
+
+.list-title {
+  display: flex;
+}
+
+.list-title {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+  background-color: #feeeee;
+  /* margin: 20rpx; */
+}
+
+.banner_image {
+  width: 100%;
+  height: 100%;
+}

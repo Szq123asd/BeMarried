@@ -1,0 +1,48 @@
+<!--pages/bless/bless.wxml-->
+<view class='container'>
+  <view class='num'>
+    <text>已有 {{num}} 位好友送上祝福</text>
+  </view>
+  <!-- 祝福头像 -->
+    <scroll-view scroll-y style='height:200rpx'>
+  <view class='avatar'>
+    <image wx:for='{{list}}' wx:key='index' class='cu-avatar lg round margin-left' src='{{item.img}}'></image>
+    <text>{{item.name}}</text>
+  </view>
+  </scroll-view>
+  <!-- 显示祝福语区域 -->
+  <scroll-view scroll-y style='height:700rpx'>
+  <view class="cu-list menu-avatar comment" wx:for='{{list}}' wx:key="index">
+    <view class="cu-item">
+      <image class="cu-avatar round" src='{{item.img}}'></image>
+      <view class="content">
+        <view class="text-grey">{{item.name}}</view>
+        <view class="bg-grey padding-sm radius margin-top-sm  text-sm">
+          <view class="flex">
+            <view wx:if="{{item.message == null}}">
+              <view class="flex-sub">这家伙很懒，什么都没说</view>
+            </view>
+            <view wx:else class='flex-sub'>
+              {{item.message}}
+            </view>
+          </view>
+        </view>
+        <view class="margin-top-sm flex " wx:if="{{item.time != null}}">
+          <view class="text-gray text-df">{{item.time}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  </scroll-view>
+  <!-- 写祝福语 -->
+  <view class='wish'>
+    <view class="cu-bar input">
+      <view class="action">
+      </view>
+      <input class="solid-bottom" placeholder='在这里输入你要说的话' maxlength="300" cursor-spacing="10" bindinput='getContext'></input>
+      <view class="action">
+      </view>
+      <button class="cu-btn bg-green shadow-blur" bindtap='send'>发送</button>
+    </view>
+  </view>
+</view>

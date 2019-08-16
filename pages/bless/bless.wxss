@@ -1,0 +1,37 @@
+/* pages/bless/bless.wxss */
+@import "/colorui/main.wxss";
+.container{
+  height: 100%;
+}
+/* 祝福人数 */
+.num{
+  margin: 8px 0 6px 0;
+  height: 30px;
+  width: 100%;
+  background-color: #EBD4EF;
+  border-radius:10px; 
+  line-height: 30px;
+  text-align: center;
+  font-size:15px; 
+}
+/* 头像区域 */
+.avatar{
+  height: 100px;
+  /* border: 1px solid red; */
+  overflow: hidden;
+  margin-bottom:30rpx;
+}
+/* 写祝福语区域 */
+.wish{
+  display: block;
+  position: fixed;
+  bottom: 0px;
+
+  width: 100%;
+}
+
+.img{
+  width: 750rpx;
+  height: 250rpx;
+  border: 1px solid red
+}

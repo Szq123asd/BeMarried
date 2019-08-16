@@ -1,0 +1,37 @@
+<view wx:if="{{music_url}}">
+  <view wx:if="{{isPlayingMusic}}">
+    <view class="background_music" bindtap="play">
+      <image src="/image/music_icon.png" class="musicImg music_icon" />
+      <image src="/image/music_play.png" class="music_play pauseImg" />
+    </view>
+  </view>
+  <view wx:else>
+    <view class="background_music" bindtap="play">
+      <image src="/image/music_icon.png" class="musicImg" />
+      <image src="/image/music_play.png" class="music_play playImg" />
+    </view>
+  </view>
+</view>
+<!-- //轮播图 -->
+<swiper class="card-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+  <swiper-item wx:for="{{swiperList}}" wx:key class="{{cardCur==index?'cur':''}}">
+    <view class="swiper-item">
+      <image lazy-load='true' src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+      <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+    </view>
+  </swiper-item>
+</swiper>
+<!-- 图片列表 -->
+<view class='list bannerStyle' wx:for="{{list}}" wx:key="index">
+  <view class='list-title'>
+    <view class="text-moreDay">
+      <text class="name">{{item.title}}</text>
+    </view>
+  </view>
+  <view class='imgList' bindtap='jump' data-id="{{item._id}}" data-type="{{item._id}}">
+    <view>
+      <image lazy-load='true' class="banner_image" mode="aspectFill" src='{{item.images}}'></image>
+    </view>
+  </view>
+  <view class="jump" data-id="{{item._id}}" bindtap='jump'>查看详情</view>
+</view>

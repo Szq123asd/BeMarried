@@ -1,0 +1,18 @@
+<!--pages/map/map.wxml-->
+<view class='container'>
+  <image src='/image/inv.png' class='inv'></image>
+  <image lazy-load="true" src='cloud://marry-82nvc.6d61-marry-82nvc/123.webp' class='cover' mode='aspectFill'></image>
+   <view class='datetime' animation="{{animationData}}">
+      <view class='box'>
+        <view class="name css13610f7ae66601">
+          Mr.史&Miss.吕
+        </view>
+        <view class="date css13610f7ae66601">
+          <view>谨定于 2019年10月01日</view>
+          <view>农历 2019年九月初三 举办婚礼</view>
+          <view bindtap="markertap">地址：聊城市莘县妹冢镇五里屯村(点击查看地图)</view>
+          <view>恭请您的光临</view>
+        </view>
+      </view>
+    </view>
+</view>

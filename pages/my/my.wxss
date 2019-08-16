@@ -1,0 +1,123 @@
+
+
+ .cover{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 750rpx;
+    height: 100vh;
+    opacity: 0.5;
+    z-index: -100;
+} 
+.confirm-btn {
+  z-index: 100;
+  font-size: 13pt;
+  line-height: 85rpx;
+  height: 85rpx;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+page {
+  line-height: 1.6em;
+  color: #656565;
+}
+
+.banner_container {
+  display: inline-block;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 64%;
+}
+
+.heading {
+  margin-bottom: 22px;
+  margin-top: 50px;
+  padding: 3px 8px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.name {
+  display: block;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.title {
+  display: block;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 20px;
+}
+.time {
+  display: block;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: white;
+  margin-top: 10px;
+}
+
+.countdown {
+  text-align: center;
+  margin-top: 16px;
+  line-height: 48px;
+
+}
+
+.styled view:first-child {
+  margin-left: 0;
+}
+
+.styled view {
+  display: inline-block;  margin-left: 10px; 
+  font-size: 28px;
+}
+
+.styled view {
+  font-weight: normal;
+  text-align: center;
+  text-shadow: none;
+  vertical-align: middle;
+  color: #f44336;
+  margin: 10px 4px;
+  height: auto;
+
+
+  width: 112px;
+  border: 1px dashed rgba(0, 255, 255, 0.46);
+}
+
+.styled view text {
+    font-size: 14px;
+}
+.styled view text {
+    display: block;
+    font-size: 16px;
+    margin-top: 0;
+    font-weight: normal;
+    text-align: center;
+    background: rgba(233, 30, 99, 0.31);
+    color: #fff;
+    margin: 0 9px 8px 9px;
+    height: 28px;
+    line-height: 28px;
+}

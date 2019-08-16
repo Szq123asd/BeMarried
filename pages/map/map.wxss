@@ -1,0 +1,57 @@
+/* pages/map/map.wxss */
+@import "/colorui/main.wxss";
+.container {
+    min-height: 100vh;
+}
+
+.inv {
+    width: 572rpx;
+    height: 69rpx;
+    position: fixed;
+    top: 80rpx;
+    left: 89rpx;
+    z-index: 99
+}
+.datetime {
+    position: fixed;
+    bottom: 50rpx;
+    width: 620rpx;
+    padding: 15rpx;
+    left: 50rpx;
+
+    background-color: rgba(255, 255, 255, .8)
+}
+.f1{
+  display: block;
+  text-align: center;
+}
+.box {
+    padding: 30rpx 0;
+    position: relative;
+    border: 4rpx solid rgba(0, 0, 0, .8);
+}
+
+.name {
+    width: 400rpx;
+    margin: 0 auto;
+    min-height: 0;
+    overflow: hidden;
+    font-size: 50rpx;
+    line-height: 50rpx;
+    text-align: center;
+}
+
+.cover{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 750rpx;
+    height: 100vh;
+}
+
+.date {
+    text-align: center;
+    font-size: 30rpx;
+    line-height: 50rpx;
+    margin-top: 20rpx;
+}

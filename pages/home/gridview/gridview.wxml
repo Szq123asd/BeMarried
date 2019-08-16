@@ -1,0 +1,15 @@
+<!--pages/home/gridview/gridview.wxml-->
+<view class='view_style'>
+  <view>
+   <view class="text">
+      <text class="text_style">
+       {{dsc}}
+      </text>
+    </view>
+    <view class='img' wx:for="{{list}}" wx:key="index">
+      <image  mode="aspectFill" class="img_style" data-src='{{item}}' bindtap="previewImage"  src='{{item}}'>
+      </image>
+    </view>
+   
+  </view>
+</view>
