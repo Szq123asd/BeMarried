@@ -8,10 +8,10 @@ Page({
   data: {
     datetime: "2019年10月1日 上午 10点0分",
     datetimeTo: "2019/10/01 10:00:00 ", // 秒杀开始时间
-    days:"",
-    seconds:"",
-    minutes:"",
-    hours:"",
+    days: "",
+    seconds: "",
+    minutes: "",
+    hours: "",
     angle: 0,
     appName: "Marry",
     userInfo: [],
@@ -19,11 +19,11 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo')
 
   },
-  onLoad: function() {
+  onLoad: function () {
     this.timeLeft()
   },
-// 倒计时功能
-  timeLeft: function() {
+  // 倒计时功能
+  timeLeft: function () {
     this.data.timer = setInterval(() => {
       var time1 = new Date().getTime()
       var time2 = new Date(this.data.datetimeTo).getTime()
@@ -35,8 +35,8 @@ Page({
       this.setData({
         seconds: seconds,
         hours: hours,
-        days:days,
-        minutes:minutes
+        days: days,
+        minutes: minutes
       })
     }, 1000);
   },
