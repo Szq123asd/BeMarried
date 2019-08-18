@@ -109,7 +109,8 @@ Page({
     wx.openLocation({
       latitude,
       longitude,
-      scale: 18
+      scale: 18,
+      address:"山东聊城市莘县妹冢五里屯村"
     })
   }
 })
