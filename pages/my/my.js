@@ -7,7 +7,7 @@ const db = wx.cloud.database()
 Page({
   data: {
     datetime: "2019年10月1日 上午 10点0分",
-    datetimeTo: "2019/10/01 10:00:00 ", // 秒杀开始时间
+    datetimeTo: "2019/10/01 10:00:00 ", // 开始时间
     days: "",
     seconds: "",
     minutes: "",
