@@ -8,7 +8,7 @@
     <image wx:for='{{list}}' wx:key='index' class='cu-avatar lg round margin-left' src='{{item.img}}'></image>
   </scroll-view>
   <!-- 显示祝福语区域 -->
-  <scroll-view scroll-y style='height:700rpx'>
+  <scroll-view scroll-y style='height:700rpx' bindscrolltoupper="upper" bindscrolltolower="tolower">
   <view class="cu-list menu-avatar comment" wx:for='{{list}}' wx:key="index">
     <view class="cu-item">
       <image class="cu-avatar round" src='{{item.img}}'></image>

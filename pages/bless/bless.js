@@ -75,5 +75,19 @@ Page({
       title: '我们的幸福，需要你的见证', //转发标题
       path: 'pages/my/my',
     }
+  },
+  upper:function(){
+    wx.showToast({
+      title: '已到顶部',
+      icon:'none',
+      duration: 2000
+    })
+  },
+  tolower:function(){
+    wx.showToast({
+      title: '已到底部',
+      icon:'none',
+      duration:2000
+    })
   }
 })
