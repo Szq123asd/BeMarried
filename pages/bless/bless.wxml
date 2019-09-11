@@ -5,10 +5,7 @@
   </view>
   <!-- 祝福头像 -->
     <scroll-view scroll-y style='height:200rpx'>
-  <view class='avatar'>
     <image wx:for='{{list}}' wx:key='index' class='cu-avatar lg round margin-left' src='{{item.img}}'></image>
-    <text>{{item.name}}</text>
-  </view>
   </scroll-view>
   <!-- 显示祝福语区域 -->
   <scroll-view scroll-y style='height:700rpx'>
